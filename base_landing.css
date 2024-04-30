@@ -1,0 +1,857 @@
+@charset "UTF-8";
+
+/********************************/
+/*****  Carga Tipografías  *****/
+
+@import url("./nvidia_fonts.css");
+
+/* Import fonts Intel */
+
+@font-face {
+  font-family: "IntelOne-Light";
+  src: url("../fonts/intelone-display-light.otf");
+}
+@font-face {
+  font-family: "IntelOne-Regular";
+  src: url("../fonts/intelone-display-regular.otf");
+}
+@font-face {
+  font-family: "IntelOne-Medium";
+  src: url("../fonts/intelone-display-medium.otf");
+}
+@font-face {
+  font-family: "IntelOne-Bold";
+  src: url("../fonts/intelone-display-bold.otf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Bold";
+  src: url("../fonts/Ubuntu-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Bold-Italic";
+  src: url("../fonts/Ubuntu-BoldItalic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Italic";
+  src: url("../fonts/Ubuntu-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Light";
+  src: url("../fonts/Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Light-Italic";
+  src: url("../fonts/Ubuntu-LightItalic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url("../fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Medium-Italic";
+  src: url("../fonts/Ubuntu-MediumItalic.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-Regular";
+  src: url("../fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Signika";
+  src: url("../fonts/Signika-VariableFont_wght.ttf");
+}
+
+/********************************/
+/*****  Variables y  ***********/
+
+:root {
+  --green-pcf: #43d87e;
+  --green-light-pcf: #ccf6dd;
+  --green-light-2-pcf: #a9eec5;
+  --green-dark-pcf: #0b391d;
+  --yellow-pcf: #e2ff3c;
+  --blue-pcf: #2644f9;
+  --blue-light-pcf: #e2ecff;
+  --blue-dark-pcf: #051db1;
+  --blue-medium: #d7e3fc;
+  --gray-pcf: #666666;
+  --gray-light-pcf: #f1f3f4;
+  --gray-light-2-pcf: #f2f2f2;
+  --white: #ffffff;
+  --black: #000000;
+  --blue-dark-intel: #0a001f;
+}
+
+.cont_fich_nuev {
+  font-size: 16px;
+}
+
+/********************************/
+/********  Textos  *************/
+
+/** Colores Textos **/
+
+.pcf-text-green {
+  color: var(--green-pcf);
+}
+.pcf-text-green-light {
+  color: var(--green-light-pcf);
+}
+.pcf-text-green-light-2 {
+  color: var(--green-light-2-pcf);
+}
+.pcf-text-green-dark {
+  color: var(--green-dark-pcf);
+}
+.pcf-text-blue {
+  color: var(--blue-pcf);
+}
+.pcf-text-blue-light {
+  color: var(--blue-light-pcf);
+}
+.pcf-text-blu-dark {
+  color: var(--blue-dark-pcf);
+}
+.pcf-text-yellow {
+  color: var(--yellow-pcf);
+}
+.pcf-text-gray {
+  color: var(--gray-pcf);
+}
+.pcf-text-gray-light {
+  color: var(--gray-light-pcf);
+}
+.pcf-text-white {
+  color: var(--white);
+}
+.pcf-text-black {
+  color: var(--black);
+}
+
+/** Tipografías Textos **/
+
+.pcf-text-regular {
+  font-family: Ubuntu-Regular;
+}
+
+.pcf-text-medium {
+  font-family: Ubuntu-Medium;
+}
+
+.pcf-text-bold {
+  font-family: Ubuntu-Bold;
+}
+
+.intel-text-light {
+  font-family: IntelOne-Light;
+}
+.intel-text-regular {
+  font-family: IntelOne-Regular;
+}
+.intel-text-medium {
+  font-family: IntelOne-Medium;
+}
+.intel-text-bold {
+  font-family: IntelOne-Bold;
+}
+
+/** Tamaños de Texto (Títulos y Parrafo) **/
+
+.pcf-title-big {
+  font-size: 4rem !important;
+}
+
+.pcf-title-medium {
+  font-size: 2.5rem !important;
+}
+
+.pcf-title-small {
+  font-size: 1.8rem !important;
+}
+
+.pcf-paragraph {
+  font-family: "Signika", Ubuntu-Bold, sans-serif;
+  font-size: 1.7rem !important;
+  line-height: 1.9rem !important;
+  margin: 13px auto !important;
+  font-weight: 400 !important;
+  max-width: 75ch;
+}
+
+.pcf-text-info {
+  font-size: 1.2rem !important;
+}
+
+/* Tipografías textos nvidia */
+
+.fgeforceb {
+  font-family: "geforce-bold";
+}
+
+.fgeforcel {
+  font-family: "geforce-light";
+}
+
+.notchL {
+  font-family: "geforce-light-notch";
+}
+
+.notchB {
+  font-family: "geforce-bold-notch";
+}
+
+.nvidiasansr {
+  font-family: "nvidiasans-regular" !important;
+}
+
+.nvidiasansm {
+  font-family: "nvidiasans-mid" !important;
+  font-weight: normal;
+}
+
+.nvidiasansmi {
+  font-family: "nvidiasans-midit" !important;
+}
+
+.nvidiasansb {
+  font-family: "nvidiasans-bold" !important;
+}
+
+.nvidiasansbi {
+  font-family: "nvidiasans-bold-italic" !important;
+}
+
+.nvidiasansl {
+  font-family: "nvidiasans-lig" !important;
+}
+
+.nvidiasansli {
+  font-family: "nvidiasans-ligit" !important;
+}
+
+/********************************/
+/*******  Fondos  **************/
+
+.pcf-bg-gray {
+  background-color: var(--gray-pcf) !important;
+}
+.pcf-bg-gray-light {
+  background-color: var(--gray-light-pcf) !important;
+}
+.pcf-bg-gray-light-2 {
+  background-color: var(--gray-light-2-pcf) !important;
+}
+.pcf-bg-green {
+  background-color: var(--green-pcf);
+}
+.pcf-bg-green-light {
+  background-color: var(--green-light-pcf);
+}
+.pcf-bg-green-light-2 {
+  background-color: var(--green-light-2-pcf);
+}
+.pcf-bg-green-dark {
+  background-color: var(--green-dakr-pcf);
+}
+.pcf-bg-white {
+  background-color: var(--white);
+}
+.pcf-bg-black {
+  background-color: var(--black);
+}
+.pcf-bg-blue {
+  background-color: var(--blue-pcf);
+}
+.pcf-bg-blue-light {
+  background-color: var(--blue-light-pcf);
+}
+.pcf-bg-blue-dark {
+  background-color: var(--blue-dark-pcf);
+}
+.pcf-bg-yellow {
+  background-color: var(--yellow-pcf);
+}
+.intel-bg-blue-dark {
+  background-color: var(--blue-dark-intel);
+}
+.pcf-text-underline:hover {
+  text-decoration: underline;
+}
+
+/********************************/
+/*******  Botones  **************/
+
+a.buttonSeeAll {
+  border: 1px solid var(--blue-light-pcf);
+  padding: 10px 15px 10px 15px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 10px 0;
+  font-size: 1em;
+  background: var(--blue-light-pcf);
+  color: var(--blue-pcf) !important;
+  text-align: left;
+  transition: 0.3s;
+}
+
+a.buttonSeeAll:hover {
+  background-color: var(--blue-medium);
+  border: 1px solid var(--blue-medium);
+  color: var(--blue-pcf);
+}
+
+@media (max-width: 768px) {
+  a.buttonSeeAll {
+    font-size: 0.75em;
+  }
+
+  #ingresa,
+  #listo {
+    min-height: 287px !important;
+  }
+
+  #infoNotebooks {
+    min-height: 245px !important;
+  }
+}
+
+.pcf-border-green {
+  border: solid 1px var(--green-pcf);
+  padding: 10px 10px 10px 20px;
+  word-break: break-word;
+}
+
+/****************************************/
+/****** Header Landing  *********/
+
+.headerlanding .img-header {
+  max-width: 1420px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  float: initial;
+  display: block;
+}
+
+/****************************************/
+/****** Separadores Productos  *********/
+
+.separador-especial {
+  background-image: none;
+  background-color: #43d87e;
+}
+
+/****************************************/
+/*******  Titular categoria  ***********/
+
+.white-txt {
+  color: white !important;
+  padding: 15px;
+}
+
+.texto-titular-categoria {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff !important;
+}
+/****************************************/
+/***** CSS MODAL ******/
+
+.modal_video {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  opacity: 0;
+}
+
+.modal_video_content {
+  width: 80%;
+  height: 90%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 1px solid #fff;
+  background: #000;
+  display: none;
+  z-index: 99;
+}
+
+.close-icon {
+  /* float: right; */
+  /* width: 13px; */
+  /* margin-right: 9px; */
+  /* margin-top: 54px; */
+  position: absolute !important;
+  top: 3%;
+  right: 7%;
+}
+
+#landing .delete,
+.close-icon {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background-color: rgba(10, 10, 10, 0.2);
+  border: none;
+  border-radius: 290486px;
+  cursor: pointer;
+  pointer-events: auto;
+  display: inline-block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size: 0;
+  height: 20px;
+  max-height: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  outline: 0;
+  position: relative;
+  vertical-align: top;
+  width: 20px;
+}
+
+#landing .delete::after,
+#landing .delete::before,
+.close-icon::after,
+.close-icon::before {
+  background-color: #fff;
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+#landing .delete::before,
+.close-icon::before {
+  height: 2px;
+  width: 50%;
+}
+
+#landing .delete::after,
+.close-icon::after {
+  height: 50%;
+  width: 2px;
+}
+
+.modal_video iframe {
+  width: 100%;
+  height: 100%;
+  top: 50%;
+}
+
+.modal_video_title {
+  font-size: 28px;
+  margin: 10px 15px;
+  color: #76b900;
+}
+
+/* AJUSTE RESPONSIVO MODAL  */
+
+@media (max-width: 1023px) {
+  .modal_video iframe {
+    width: 100%;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+  }
+
+  .modal_video_content {
+    width: 80%;
+    height: 30%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: 1px solid #fff;
+    background: #000;
+    display: none;
+    z-index: 99;
+  }
+
+  .close-icon {
+    /* float: right; */
+    /* width: 13px; */
+    /* margin-right: 9px; */
+    /* margin-top: 54px; */
+    position: absolute !important;
+    top: 32%;
+    right: 15px;
+  }
+
+  .grid-container {
+    max-width: 100%;
+    display: grid;
+    /* grid-template-columns: 1fr min(142rem, calc(100% - 32px)) 1fr; */
+    margin: 0 auto;
+  }
+}
+
+/****************************************/
+/***** CSS ESPECIFICO DEL LANDING ******/
+
+.landing {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.carousel-item img {
+  max-width: 1420px;
+  margin: 0 auto;
+}
+.cajaproductos {
+  max-width: 100% !important;
+}
+
+.margin-scroll {
+  margin-top: 25px;
+}
+
+@media (max-width: 1023px) {
+  .margin-scroll {
+    margin-top: 240px;
+  }
+}
+
+#count-down {
+  position: absolute;
+  top: 50%;
+  right: 12.7%;
+  padding: 20px;
+}
+
+.despacho-img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.pcf-text-underline:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  /** Tamaños de Texto (Títulos y Parrafo) **/
+}
+/* 
+.huincha{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10000000;
+  width: 100%;
+} */
+
+.huincha {
+  width: 100%;
+}
+.huincha {
+  text-align: center;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #42474a;
+}
+.huincha img {
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+/* Card Categories*/
+
+.cardCategories {
+  border: 1px solid rgb(216, 216, 216);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  min-height: 225px;
+  margin: 10px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cardCategories__icon {
+  width: 100%;
+  height: 100%;
+  max-width: 30px;
+  max-height: 30px;
+  object-fit: contain;
+}
+
+/* Card Steps */
+
+.cardSteps {
+  border: 1px solid rgb(216, 216, 216);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px 0;
+}
+
+.cardSteps__icon {
+  width: 70px;
+  height: 70px;
+  padding: 9px;
+}
+
+.cardSteps__icon img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.cardSteps__content {
+  min-height: 125px;
+}
+
+/* Card Register*/
+
+.cardRegister {
+  border: 1px solid rgb(216, 216, 216);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.cardRegister__content {
+  min-height: 145px;
+  border-radius: 4px 4px 0 0;
+}
+
+.cardRegister__icon {
+  width: 100%;
+  height: 100%;
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: contain;
+}
+.cardRegister__cta {
+  min-height: 100px;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Mediaqueries for Desktop */
+
+@media (min-width: 768px) {
+  /** Tamaños de Texto (Títulos y Parrafo) **/
+  .pcf-title-big {
+    font-size: 6rem !important;
+  }
+
+  .pcf-title-medium {
+    font-size: 4.5rem !important;
+    margin: 15px 0 !important;
+  }
+
+  .pcf-title-small {
+    font-size: 2.8rem !important;
+  }
+
+  .pcf-paragraph {
+    font-family: "Signika", Ubuntu-Bold, sans-serif;
+    font-size: 1.7rem !important;
+    line-height: 1.8rem !important;
+    margin: 13px auto !important;
+    font-weight: 400 !important;
+  }
+
+  .pcf-faq {
+    font-family: "Signika", Ubuntu-Bold, sans-serif;
+    font-size: 1.5em !important;
+    line-height: 1.6em !important;
+    font-weight: 300 !important;
+  }
+
+  .pcf-list li {
+    list-style: none;
+    margin: 10px 0;
+  }
+
+  .pcf-oferdered-list li {
+    list-style: decimal;
+    color: var(--white);
+  }
+
+  .pcf-text-info {
+    font-size: 1.2rem !important;
+  }
+
+  .link-pcf {
+    color: #00d879 !important;
+    margin: 0 5px 0 0;
+    font-weight: 700;
+  }
+
+  /* Cards Categories*/
+
+  .cardCategories {
+    min-height: 250px;
+  }
+
+  .cardSteps {
+    min-height: 250px;
+  }
+
+  .cardRegister__content {
+    min-height: 250px;
+  }
+
+  /* Cards Register*/
+  .cardRegister__icon {
+    width: 100%;
+    height: 100%;
+    max-width: 148px;
+    max-height: 150px;
+    object-fit: contain;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.margin-scroll {
+  margin-top: 160px;
+}
+
+/* Acordeon Styles */
+.bs-5 .accordion-item {
+  border: none;
+}
+
+.accordion-item-vdb {
+  border-bottom: 1px solid #20c997 !important;
+  padding: 0.5% 0%;
+}
+
+.accordion button[aria-expanded="true"] {
+  border-bottom: 1px solid var(--bs-teal);
+  /* background-color: #00d8791c; */
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: var(--bs-gray-dark);
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: var(--bs-teal);
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: var(--bs-teal);
+  border: 1px solid var(--bs-teal);
+}
+
+.accordion .icon {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 22px;
+  height: 22px;
+  /* color: #00d879; */
+}
+
+.accordion .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 1px;
+  width: 19px;
+  height: 5px;
+  background: currentColor;
+}
+
+.accordion .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 1px;
+  left: 8px;
+  width: 5px;
+  height: 22px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded="true"] {
+  color: var(--bs-teal);
+}
+
+.accordion button[aria-expanded="true"] .icon::after {
+  width: 0;
+}
+
+.accordion button[aria-expanded="true"] + .accordion-content {
+  opacity: 1.5;
+  max-height: 20em;
+  transition: all 500ms ease-in-out;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms ease-in-out, max-height 400ms ease-in-out;
+  will-change: opacity, max-height;
+}
+
+.accordion-content p {
+  font-size: 1em !important;
+  font-weight: 300;
+  margin: 0.5em 0;
+  line-height: 1.2em !important;
+}
+
+.bs-5 .accordion-button::after {
+  display: none;
+}
+
+.bs-5 .accordion-button:not(.collapsed) {
+  color: #212529;
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+.nav-acordeon-title {
+  font-weight: 600 !important;
+}
