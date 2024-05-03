@@ -1,73 +1,97 @@
-*{
+* {
   transition: all ease .3s;
 }
+
 .triangle {
   position: absolute;
-  background-color: #43d87e;
   text-align: left;
   top: 60%;
   right: -10px;
-  z-index: -1;
+  z-index: 1;
 }
+
 .triangle:before,
 .triangle:after {
-	content: '';
-	position: absolute;
-	background-color: inherit;
+  content: '';
+  position: absolute;
+  background-color: inherit;
 }
+
 .triangle,
 .triangle:before,
 .triangle:after {
-	width:  15px;
-	height: 15px;
-	border-top-right-radius: 30%;
+  width: 15px;
+  height: 15px;
+  border-top-right-radius: 30%;
 }
 
 .triangle {
-	transform: rotate(60deg) skewX(-30deg) scale(1,.866);
-}
-.triangle:before {
-	transform: rotate(-135deg) skewX(-45deg) scale(1.414,.707) translate(0,-50%);
-}
-.triangle:after {
-	transform: rotate(135deg) skewY(-45deg) scale(.707,1.414) translate(50%);
+  transform: rotate(60deg) skewX(-30deg) scale(1, .866);
 }
 
-.bg-section-1{
-  background-color: #E2ECFF;
+.triangle:before {
+  transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
 }
-.section-bloque{
+
+.triangle:after {
+  transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+
+.triangle-blue {
+  bottom: -10px;
+  top: auto;
+  left: auto;
+  right: 30%;
+  transform: rotate(90deg) skewX(-30deg) scale(1, .866);
+}
+
+.bg-section-1 {
+  background-color: #E2ECFF;
+  min-height: 185px;
+}
+
+.section-bloque {
   border-style: dashed;
   border-width: 2px;
-  border-color: #3A7AFF;
-  color: #001284;
   height: 100%;
 }
 
-.section-bloque-1{
+.main-bloque {
   border-style: solid;
   border-width: 2px;
+  height: 100%;
+}
+
+.bloque-blue {
+  border-color: #3A7AFF;
+  color: #001284;
+}
+
+.main-bloque-blue {
   border-color: #C1D5FF;
   color: #001284;
   background-color: #C1D5FF;
+}
+
+.h-100 {
   height: 100%;
 }
 
-.h-100{
-  height: 100%;
-}
-
-.bg-section-2{
+.bg-section-2 {
   background-color: #CCF6DD;
 }
-.section-bloque-2{
+
+.main-bloque-green {
   background-color: #81E9AA;
   color: #013B18;
   border-color: #81E9AA;
 }
 
-.section-bloque2{
+.bloque-green {
   background-color: #A9EEC5;
   color: #013B18;
   border-color: #81E9AA;
+}
+.card-rrss{
+  border-radius: 1rem;
 }
